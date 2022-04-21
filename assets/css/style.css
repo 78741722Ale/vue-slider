@@ -5,19 +5,36 @@
     box-sizing: border-box;
 }
 
+/* Elemento Radice */
+:root {
+    --Width_100 : 100%;
+    --Heigth_col_sm: calc(100% / 5);
+    --Heigth_Container: 600px;
+}
+
 /* Regole comuni */
 .h_container {
-    height: 600px;
+    height: var(--Heigth_Container);
 }
 
 .h_col_sm {
-    height: calc(100% / 5);
+    height: var(--Heigth_col_sm);
+    border: 2px solid black;
 }
 
 /* Common rules per le immagini, a prescindere dalla colonna */
 .img_col {
-    width: 100%;
-    height: 100%;
+    width: var(--Width_100);
+    height: var(--Heigth_col_sm);
+    background-repeat: no-repeat;
+}
+
+/* Margine e Padding a 0, come da foto */
+/* Ho dovuto sovrascrivere con important :/  */
+.m_p_none {
+    margin: 0;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 /* Colori di Prova di Background */
@@ -30,10 +47,14 @@
     opacity: 50%;
     border: 1px solid black;
 }
-
 .bg_image_2 {
     background-color: rgb(81, 232, 11);
     opacity: 70%;
     border: 1px solid black;
 }
 
+.Col_10_Classes > img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}

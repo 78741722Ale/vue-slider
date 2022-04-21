@@ -19,7 +19,9 @@
     <div :class="Container_Classes" id='app'>
         <div :class="Row_Classes">
             <!-- Immagine principale -->
-            <div :class="Col_10_Classes"></div>
+            <div :class="Col_10_Classes">
+                <img v-for="image in countries" :src="countries[activeImage].image">
+            </div>
             <!-- Carosello Verticale -->
             <div :class="Col_2_Classes">
                 <!-- Immagini del carosello -->
