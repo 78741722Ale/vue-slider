@@ -51,7 +51,7 @@ const app = new Vue({
         prevImage() {
             console.log('Prev image');
             if (this.activeImage === 0) {
-                this.activeImage = this.countries.length - 1
+                this.activeImage = this.countries.length
             }
             this.activeImage--
         },

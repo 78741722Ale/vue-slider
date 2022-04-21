@@ -95,3 +95,8 @@
     border-radius: 50%;
 }
 
+/* Bordo Active */
+
+.active {
+    border: 5px solid lime;
+}

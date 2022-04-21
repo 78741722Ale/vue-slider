@@ -23,7 +23,7 @@
         <div :class="Row_Classes">
             <!-- Immagine principale -->
             <div :class="Col_10_Classes">
-                <img :class="Main_image" :src="countries[activeImage].image">
+                <img class="img_col_10" :src="countries[activeImage].image">
                 <div class="text_thumb">
                     <!-- Titolo -->
                     <h3 class="img_title">{{ countries[activeImage].title }}</h3>
@@ -34,7 +34,7 @@
             <!-- Carosello Verticale -->
             <div :class="Col_2_Classes">
                 <!-- Immagini del carosello -->
-                <img :src="countries[index].image" class="img_col" v-for="(image, index) in countries">
+                <img :src="countries[index].image" :class="activeImage === index ? 'active' : ''" class="img_col" v-for="(image, index) in countries">
                 <!-- Pulsanti -->
                 <div class="w-100 h-100 d-flex flex-column">
                     <div @click="prevImage" class="abs_top"><i class="fa-solid bg_try p-2 fa-chevron-up"></i></div>
