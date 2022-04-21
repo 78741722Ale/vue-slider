@@ -3,6 +3,13 @@ const app = new Vue({
     el: '#app',
     // dati contenuti
     data: {
+        // Classi interattive richiamate da JS
+        Container_Classes: "h_container mt-5 container-lg bg_try",
+        Row_Classes: "row h-100 flex-nowrap",
+        Col_10_Classes: "col-10 h-100 bg_image",
+        Col_2_Classes: "col-2 h-100 bg_image_2",
+        Carousel_img: "col-12 d-flex justify-content-center align-items-center h_col_sm",
+        // Array di Object
         countries: [
             // Object: Svezia
             {

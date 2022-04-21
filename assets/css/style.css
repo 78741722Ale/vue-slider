@@ -5,4 +5,35 @@
     box-sizing: border-box;
 }
 
+/* Regole comuni */
+.h_container {
+    height: 600px;
+}
+
+.h_col_sm {
+    height: calc(100% / 5);
+}
+
+/* Common rules per le immagini, a prescindere dalla colonna */
+.img_col {
+    width: 100%;
+    height: 100%;
+}
+
+/* Colori di Prova di Background */
+.bg_try {
+    background-color: crimson;
+    opacity: 50%;
+}
+.bg_image {
+    background-color: blue;
+    opacity: 50%;
+    border: 1px solid black;
+}
+
+.bg_image_2 {
+    background-color: rgb(81, 232, 11);
+    opacity: 70%;
+    border: 1px solid black;
+}
 
