@@ -45,5 +45,21 @@ const app = new Vue({
             }
         ],
     },
+    methods: {
+        prevImage() {
+            console.log('Prev image');
+            // if (this.activeImage === 0) {
+            //     this.activeImage = this.countries.image.length - 1
+            // }
+            this.activeImage--
+        },
+        nextImage() {
+            console.log('Next image');
+            this.activeImage++
+            // if (this.activeImage === this.countries.image.length) {
+            //     this.activeImage = 0;
+            // }
+        }
+    },
 })
 

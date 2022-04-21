@@ -37,8 +37,8 @@
                 <img :src="countries[index].image" class="img_col" v-for="(image, index) in countries">
                 <!-- Pulsanti -->
                 <div class="w-100 h-100 d-flex flex-column">
-                    <div class="abs_top"><i class="fa-solid bg_try p-2 fa-chevron-up"></i></div>
-                    <div class="abs_bot"><i class="fa-solid bg_try p-2 fa-chevron-down"></i></div>
+                    <div @click="prevImage" class="abs_top"><i class="fa-solid bg_try p-2 fa-chevron-up"></i></div>
+                    <div @click="nextImage" class="abs_bot"><i class="fa-solid bg_try p-2 fa-chevron-down"></i></div>
                 </div>
 
 
