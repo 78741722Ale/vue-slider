@@ -46,19 +46,21 @@ const app = new Vue({
         ],
     },
     methods: {
+        // Cambio Immagine Previous
         prevImage() {
             console.log('Prev image');
-            // if (this.activeImage === 0) {
-            //     this.activeImage = this.countries.image.length - 1
-            // }
+            if (this.activeImage === 0) {
+                this.activeImage = this.countries.length - 1
+            }
             this.activeImage--
         },
+        // Cambio Immagine successiva
         nextImage() {
             console.log('Next image');
             this.activeImage++
-            // if (this.activeImage === this.countries.image.length) {
-            //     this.activeImage = 0;
-            // }
+            if (this.activeImage === this.countries.length) {
+                this.activeImage = 0;
+            }
         }
     },
 })
