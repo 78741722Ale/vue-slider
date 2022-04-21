@@ -1,3 +1,6 @@
+/*#region Utilities generale  */
+
+
 /* Regola generale */
 * {
     padding: 0;
@@ -9,7 +12,7 @@
 :root {
     --Width_100 : 100%;
     --Heigth_col_sm: calc(100% / 5);
-    --Heigth_Container: 600px;
+    --Heigth_Container: 500px;
 }
 
 /* Regole comuni */
@@ -19,14 +22,6 @@
 
 .h_col_sm {
     height: var(--Heigth_col_sm);
-    border: 2px solid black;
-}
-
-/* Common rules per le immagini, a prescindere dalla colonna */
-.img_col {
-    width: var(--Width_100);
-    height: var(--Heigth_col_sm);
-    background-repeat: no-repeat;
 }
 
 /* Margine e Padding a 0, come da foto */
@@ -37,24 +32,67 @@
     padding-right: 0px !important;
 }
 
-/* Colori di Prova di Background */
-.bg_try {
-    background-color: crimson;
-    opacity: 50%;
-}
-.bg_image {
-    background-color: blue;
-    opacity: 50%;
-    border: 1px solid black;
-}
-.bg_image_2 {
-    background-color: rgb(81, 232, 11);
-    opacity: 70%;
-    border: 1px solid black;
+
+/*#endregion */
+
+/*#region Utilities del main  */
+
+/* Testi e paragrafi dell'immagine */
+.text_thumb {
+    width: 90%;
+    text-align: right;
+    padding: 2rem;
+    position: absolute;
+    bottom: 1%;
+    right: 5%;
 }
 
-.Col_10_Classes > img {
+.img_text,
+.img_title {
+    color: white;
+}
+
+/* Common rules per le immagini, a prescindere dalla colonna */
+.img_col {
+    width: var(--Width_100);
+    height: var(--Heigth_col_sm);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.img_col_10 {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
+/*#endregion */
+
+/*#region Utilities di position  */
+.abs_top {
+    top: 3%;
+}
+
+.abs_bot {
+    bottom: 3%; 
+}
+
+.abs_bot,
+.abs_top {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.rel {
+    position: relative;
+}
+
+/*#endregion */
+
+/* Sarà da buttare */
+.bg_try {
+    background-color: rgb(236, 190, 190);
+    border-radius: 50%;
+}
+

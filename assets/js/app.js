@@ -4,10 +4,10 @@ const app = new Vue({
     // dati contenuti
     data: {
         // Classi interattive richiamate da JS
-        Container_Classes: "h_container mt-5 container-lg bg_try",
+        Container_Classes: "h_container mt-5 container-xl bg_try",
         Row_Classes: "row h-100 flex-nowrap",
         Col_10_Classes: "col-10 m_p_none h-100 bg_image img_col",
-        Col_2_Classes: "col-2 m_p_none h-100 bg_image_2",
+        Col_2_Classes: "col-2 m_p_none h-100 bg_image_2 rel",
         Carousel_img: "col-12 d-flex justify-content-center align-items-center h_col_sm img_col",
         // Active image
         activeImage: 0,

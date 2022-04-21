@@ -10,6 +10,9 @@
     <!-- Link Foglio stile Bootstrap -->
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
         integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    <!-- Link a Font Awesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' integrity='sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <!-- Titolo della pagina -->
     <title>Vue Slider</title>
 </head>
 
@@ -20,16 +23,25 @@
         <div :class="Row_Classes">
             <!-- Immagine principale -->
             <div :class="Col_10_Classes">
-                <img v-for="image in countries" :src="countries[activeImage].image">
+                <img class="img_col_10" :src="countries[activeImage].image">
+                <div class="text_thumb">
+                    <!-- Titolo -->
+                    <h3 class="img_title">{{ countries[activeImage].title }}</h3>
+                    <!-- Paragrafo di testo -->
+                    <p class="img_text">{{ countries[activeImage].text }}</p>
+                </div>
             </div>
             <!-- Carosello Verticale -->
             <div :class="Col_2_Classes">
                 <!-- Immagini del carosello -->
-                <div :class="Carousel_img">A</div>
-                <div :class="Carousel_img">B</div>
-                <div :class="Carousel_img">C</div>
-                <div :class="Carousel_img">D</div>
-                <div :class="Carousel_img">E</div>
+                <img :src="countries[index].image" class="img_col" v-for="(image, index) in countries">
+                <!-- Pulsanti -->
+                <div class="w-100 h-100 d-flex flex-column">
+                    <div class="abs_top"><i class="fa-solid bg_try p-2 fa-chevron-up"></i></div>
+                    <div class="abs_bot"><i class="fa-solid bg_try p-2 fa-chevron-down"></i></div>
+                </div>
+
+
             </div>    
         </div>
     </div>
