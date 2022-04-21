@@ -9,6 +9,7 @@ const app = new Vue({
         Col_10_Classes: "col-10 m_p_none h-100 bg_image img_col",
         Col_2_Classes: "col-2 m_p_none h-100 bg_image_2 rel",
         Carousel_img: "col-12 d-flex justify-content-center align-items-center h_col_sm img_col",
+        Main_image: "img_col_10",
         // Active image
         activeImage: 0,
         // Array di Object

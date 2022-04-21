@@ -23,7 +23,7 @@
         <div :class="Row_Classes">
             <!-- Immagine principale -->
             <div :class="Col_10_Classes">
-                <img class="img_col_10" :src="countries[activeImage].image">
+                <img :class="Main_image" :src="countries[activeImage].image">
                 <div class="text_thumb">
                     <!-- Titolo -->
                     <h3 class="img_title">{{ countries[activeImage].title }}</h3>
@@ -40,8 +40,6 @@
                     <div @click="prevImage" class="abs_top"><i class="fa-solid bg_try p-2 fa-chevron-up"></i></div>
                     <div @click="nextImage" class="abs_bot"><i class="fa-solid bg_try p-2 fa-chevron-down"></i></div>
                 </div>
-
-
             </div>    
         </div>
     </div>
